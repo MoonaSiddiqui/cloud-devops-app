@@ -1,0 +1,31 @@
+{
+  "name": "cloud-devops-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "jest --runInBand",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MoonaSiddiqui/cloud-devops-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/MoonaSiddiqui/cloud-devops-app/issues"
+  },
+  "homepage": "https://github.com/MoonaSiddiqui/cloud-devops-app#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^10.8.1",
+    "jest": "^30.4.2",
+    "supertest": "^7.2.2"
+  }
+}
