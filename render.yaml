@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: cloud-devops-app
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
