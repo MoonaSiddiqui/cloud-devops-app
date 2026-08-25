@@ -99,6 +99,10 @@ If a deployment introduces a problem:
 
 This app currently doesn't require any secrets to run. If environment variables are added later (e.g. API keys, database URLs), they are read via `process.env` and never hard-coded, and are configured in Render under **Service → Environment**. `.env` is excluded from version control via `.gitignore`.
 
+## CI/CD
+
+This project uses GitHub Actions to run linting, tests, Docker builds, and automatic deployment to Render.
+
 ## Lessons Learned
 
 - **Docker:** Learned how to write a multi-stage Dockerfile to keep the production image lean, and how `EXPOSE`/`PORT` env vars need to line up with what the cloud host expects.
