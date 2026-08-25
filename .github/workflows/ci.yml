@@ -33,3 +33,7 @@ jobs:
 
       - name: Build Docker image
         run: docker build -t cloud-devops-app .
+
+      - name: Deploy to Render
+        if: github.ref == 'refs/heads/main'
+        run: curl -X POST "${{ secrets.RENDER_DEPLOY_HOOK_URL }}"
